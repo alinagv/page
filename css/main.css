@@ -1,0 +1,296 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+div,
+p,
+span,
+a,
+input,
+ul,
+li form,
+button {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(4, 235, 239, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(4, 235, 239, 1) 0%,
+    rgba(3, 120, 253, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(4, 235, 239, 1)),
+    color-stop(100%, rgba(3, 120, 253, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(4, 235, 239, 1) 0%,
+    rgba(3, 120, 253, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(4, 235, 239, 1) 0%,
+    rgba(3, 120, 253, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(4, 235, 239, 1) 0%,
+    rgba(3, 120, 253, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(4, 235, 239, 1) 0%,
+    rgba(3, 120, 253, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04ebef', endColorstr='#0378fd', GradientType=1 );
+  padding-top: 66px;
+  color: white;
+  padding-bottom: 142px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer {
+  width: 570px;
+}
+
+.title {
+  font-size: 37px;
+}
+
+.title span {
+  font-size: 59px;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  width: 410px;
+  margin-bottom: 35px;
+  width: 400px;
+}
+
+.btn {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background: #ffd429;
+  color: #2e2a1b;
+  font-weight: 900;
+  display: block;
+  width: 222px;
+  padding: 21px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #ddb61a;
+}
+
+.desktop {
+  margin-top: 7px;
+}
+
+.learn {
+  padding-top: 100px;
+  padding-bottom: 115px;
+  color: black;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  display: flex;
+}
+
+.block {
+  width: 280px;
+  background: url("../img/icon1.jpg") no-repeat top;
+  text-align: center;
+}
+
+.block-title {
+  font-size: 19px;
+  padding-top: 80px;
+}
+
+.block-text {
+  margin-top: 8px;
+}
+
+.block-travel {
+  background: url("../img/icon2.jpg") no-repeat top;
+}
+
+.block-value {
+  width: 300px;
+  background: url("../img/icon3.jpg") no-repeat top;
+}
+
+.order {
+  background: #ecf3f8;
+  padding-top: 100px;
+  padding-bottom: 106px;
+  color: #000000;
+}
+
+.form {
+  width: 343px;
+  margin: 0 auto;
+  margin-top: 57px;
+}
+
+.input {
+  width: 343px;
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  height: 48px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.btn-form {
+  width: 343px;
+  border: 0;
+  cursor: pointer;
+  display: inline;
+}
+
+.footer {
+  background: #164d7a;
+  padding: 64px 0;
+}
+
+.credits {
+  margin: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+
+.animated {
+  opacity: 0;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .desktop {
+    width: 63%;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .offer {
+    width: 100%;
+  }
+  .intro {
+    width: auto;
+  }
+  .desktop {
+    display: block;
+    width: 100%;
+    margin: 7px auto 0;
+  }
+  .btn {
+    display: inline-block;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .wrapper {
+    margin-top: 20px;
+  }
+  .desktop {
+    width: 100%;
+  }
+
+  .blocks {
+    flex-direction: column;
+    text-align: center;
+  }
+  .block {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .form {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .btn-form {
+    width: 100%;
+  }
+}
